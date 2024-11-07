@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #525252;
+        }
+        header{
+            position: fixed;
+            left: 0; top: 0; right: 0;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+            padding-left: 7%;
+            padding-right: 12%;
+            background: #fff;
+        }
+        header .logo{
+            font-size: 25px;
+            font-weight: bold;
+            color: #333;
+        }
+        header .navbar ul{
+            list-style: none;
+        }
+        header .navbar ul li{
+            position: relative;
+            float: left;
+        }
+        header .navbar ul li a{
+            display: block;
+            padding: 20px;
+            font-size: 14px;
+            color: #333;
+            text-transform: capitalize !important;
+        }
+        header .navbar ul li a:hover {
+            background: #333;
+            color: #fff;
+        }
+        header .navbar ul li ul{
+            position: absolute;
+            left: 0;
+            width: 200px;
+            background: #fff;
+            display: none;
+        }
+        header .navbar ul li ul li{
+            width: 100%;
+            border-top: 1px solid rgba(0,0,0,0.15);
+        }
+        header .navbar ul li ul li ul{
+            left: 200px;
+            top: 0;
+        }
+        header .navbar ul li:focus-within >ul,
+        header .navbar ul li:hover >ul{
+            display: initial;
+        }
+       #menu-bar{
+        display: none;
+       }
+       header label{
+            font-size: 20px;
+            cursor: pointer;
+            color: #333;
+            display: none;
+
+        }
+
+       @media(max-width: 991px){
+        header{
+            padding: 20px;
+        }
+        header label{
+            display: initial;
+        }
+        header .navbar{
+            position:absolute;
+            top: 100%; left: 0; right: 0;
+            background: #fff;
+            border-top: 1px solid rgba(0,0,0,0.15);
+            display: none;
+        }
+        header .navbar ul li{
+            width: 100%;
+        }
+        header .navbar ul li ul{
+            position: relative;
+            width: 100%;
+        }
+        header .navbar ul li ul li{
+            background: #eee;
+
+        }
+        header .navbar ul li ul li ul{
+            width: 100%;
+            left: 0;
+        }
+       }
+       #menu-bar:checked ~ .navbar{
+        display: initial;
+       }
+
+    </style>
+    <div class="header-nv-bar">
+
+    </div>
+    <header>
+        <a href="#" class="logo">MORGANVIJ</a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">contries +</a>
+                    <ul>
+                        <li><a href="#">UK</a></li>
+                        <li><a href="#">New Zealand</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">IRELAND</a></li>
+                        <li><a href="#">Germany</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="#">courses +</a>
+                    <ul>
+                        <li><a href="#">business-management</a></li>
+                        <li><a href="#">engineering</a></li>
+                        <li><a href="#">hospitality-tourism</a></li>
+                        <li><a href="#">hospitality-tourism</a></li>
+                        <li><a href="#">accounting-and-finance</a></li>
+                        <li><a href="#">health-medicine</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">services +</a>
+                    <ul>
+                        <li><a href="#">career counselling</a></li>
+                        <li><a href="#">selection of course country and university</a></li>
+                        <li><a href="#">visa-guidance</a></li>
+                        <li><a href="#">travel-assistance</a></li>
+                        <li><a href="#">post-arrival-assistance</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">branches +</a>
+                    <ul>
+                        <li><a href="#">kerala +</a>
+                            <ul>
+                                <li><a href="#">trivanrum</a></li>
+                                <li><a href="#">ernakulam</a></li>
+                                <li><a href="#">kozhicode</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Telangana +</a>
+                            <ul>
+                                <li><a href="#">ADILABAD</a></li>
+                                <li><a href="#">HYDERABAD</a></li>
+                                <li><a href="#">KAMAREDDY</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">tamilnadu +</a>
+                            <ul>
+                                <li><a href="#">chennai</a></li>
+                                <li><a href="#">madurai</a></li>
+                                <li><a href="#">coimbatore</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
