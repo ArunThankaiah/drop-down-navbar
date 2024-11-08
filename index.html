@@ -1,191 +1,578 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    
+    <title>Eduharvard - Multi-Concept Education & Courses HTML Template</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+
+     <!-- REVOLUTION LAYERS STYLES -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+
+    <!-- Favicon and touch icons  -->    
+    <link href="icon/icon.png" rel="shortcut icon">
+
+</head>                                
 <body>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-transform: capitalize;
-            text-decoration: none;
-        }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background: #525252;
-        }
-        header{
-            position: fixed;
-            left: 0; top: 0; right: 0;
-            box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            z-index: 1000;
-            padding-left: 7%;
-            padding-right: 12%;
-            background: #150f41;
-        }
-        header .logo{
-            width: 150px;
-        }
-        header .logo img{
-           display: block;
-           width: 100%;
-        }
-        header .navbar ul{
-            list-style: none;
-        }
-        header .navbar ul li{
-            position: relative;
-            float: left;
-        }
-        header .navbar ul li a{
-            display: block;
-            padding: 20px;
-            font-size: 16px;
-            color: #fff;
-            text-transform: capitalize !important;
-        }
-        header .navbar ul li a:hover {
-            background: #fff;
-            color: #000;
-        }
-        header .navbar ul li ul{
-            position: absolute;
-            left: 0;
-            width: 200px;
-            background: #150f41;
-            display: none;
-        }
-        header .navbar ul li ul li{
-            width: 100%;
-            border-top: 1px solid rgba(0,0,0,0.15);
-        }
-        header .navbar ul li ul li ul{
-            left: 200px;
-            top: 0;
-        }
-        header .navbar ul li:focus-within >ul,
-        header .navbar ul li:hover >ul{
-            display: initial;
-        }
-       #menu-bar{
-        display: none;
-       }
-       header label{
-            font-size: 20px;
-            cursor: pointer;
-            color: #333;
-            display: none;
+    <!-- Preloader -->
+    <!-- <section class="loading-overlay">
+        <div class="Loading-Page">
+            <h2 class="loader">Loading</h2>
+        </div>
+    </section>  -->
 
-        }
-
-       @media(max-width: 991px){
-        header{
-            padding: 20px;
-        }
-        header label{
-            display: initial;
-        }
-        header .navbar{
-            position:absolute;
-            top: 100%; left: 0; right: 0;
-            background: #fff;
-            border-top: 1px solid rgba(0,0,0,0.15);
-            display: none;
-        }
-        header .navbar ul li{
-            width: 100%;
-        }
-        header .navbar ul li ul{
-            position: relative;
-            width: 100%;
-        }
-        header .navbar ul li ul li{
-            background: #eee;
-
-        }
-        header .navbar ul li ul li ul{
-            width: 100%;
-            left: 0;
-        }
-       }
-       #menu-bar:checked ~ .navbar{
-        display: initial;
-       }
-
-    </style>
-    <div class="header-nv-bar">
-
-    </div>
-    <header>
-        <a href="#" class="logo"><img src="./blue logo.png" alt=""></a>
-        <input type="checkbox" id="menu-bar">
-        <label for="menu-bar">Menu</label>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">contries +</a>
-                    <ul>
-                        <li><a href="#">UK</a></li>
-                        <li><a href="#">New Zealand</a></li>
-                        <li><a href="#">Australia</a></li>
-                        <li><a href="#">IRELAND</a></li>
-                        <li><a href="#">Germany</a></li>
-                        
-                    </ul>
-                </li>
-                <li><a href="#">contries +</a>
-                    <ul>
-                        <li><a href="#">business-management</a></li>
-                        <li><a href="#">engineering</a></li>
-                        <li><a href="#">hospitality-tourism</a></li>
-                        <li><a href="#">hospitality-tourism</a></li>
-                        <li><a href="#">accounting-and-finance</a></li>
-                        <li><a href="#">health-medicine</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">services +</a>
-                    <ul>
-                        <li><a href="#">career counselling</a></li>
-                        <li><a href="#">selection of course country and university</a></li>
-                        <li><a href="#">visa-guidance</a></li>
-                        <li><a href="#">travel-assistance</a></li>
-                        <li><a href="#">post-arrival-assistance</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">branches +</a>
-                    <ul>
-                        <li><a href="#">kerala +</a>
-                            <ul>
-                                <li><a href="#">trivanrum</a></li>
-                                <li><a href="#">ernakulam</a></li>
-                                <li><a href="#">kozhicode</a></li>
+    <!-- Boxed --> 
+    <div class="boxed position_form">
+        <div class="wrap-header clearfix">
+            <div class="top top-style3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <ul class="flat-information">
+                                <li>Mon - Fri: 8.00 - 18:00</li>
+                                <li><span>P:</span><a href=""> 1-00-000-0000</a></li>
+                                <li><span>E:</span><a href="">  info@gmail.com</a></li>
                             </ul>
-                        </li>
-                        <li><a href="#">tamilnadu +</a>
-                            <ul>
-                                <li><a href="#">chennai</a></li>
-                                <li><a href="#">madurai</a></li>
-                                <li><a href="#">coimbatore</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">bangalore</a></li>
-                        <li><a href="#">hyderabad</a></li>
-                    
-                       
-                    </ul>
-                </li>
-                <li><a href="#">about us</a></li>
-                <li><a href="#">contact</a></li>
+                        </div><!-- col-md-8 -->
+                        <div class="col-md-4">
+                            <div class="wrap-flat">
+                                <!-- <ul class="flat-login-register">
+                                    <li><a href="">Sign</a></li>
+                                    <li><a href="">Regester</a></li>
+                                </ul> -->
+                                <ul class="flat-socials">
+                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div><!-- wrap-flat -->
+                        </div><!-- col-md-4 -->
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- top -->
+            <header id="header" class="header header-style3 styleheader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="logo">
+                                <a href="index.html"><img src="images/logo.png" alt="image"></a>
+                            </div><!-- /logo -->
+                            <div class="flat-search">
+                                <!-- <ul>
+                                    <li class="show-search"><a href="#"><i class="lnr lnr-magnifier"></i></a></li>
+                                    <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
+                                </ul> -->
+                                <div class="btn-menu">
+                                    <span></span>
+                                </div><!-- //mobile menu button -->
+                            </div><!-- /wrap-search -->
+                            <div class="wrap-nav">
+                                <nav id="mainnav" class="mainnav">
+                                    <ul class="menu">
+                                        <li class="active home"><a href="index.html" title="">HOME</a></li>
+                                        <!-- <li class="has-mega-menu"><a href="course-grid.html" title="" class="has-mega">COUNTRIES</a>
+                                            <ul class="submenu submenu-style2 mega-menu three-columns">
+                                                <li class="submenu-level">
+                                                   <ul class="submenu2">
+                                                        <li class="sub-title">
+                                                            <a href="#">UNITED KINGDOM</a>
+                                                            <span  class="btn-mega"></span>
+                                                        </li>
+                                                        <li  class="mega-menu-sub">
+                                                            <ul>
+                                                                <li><a href="#">Australia</a></li>
+                                                                <li><a href="#" title="">Ireland</a></li>
+                                                                <li><a href="#" title="">Germany</a></li>
+                                                                <li><a href="#" title="">Dubai</a></li>
+                                                                
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                    </ul> 
+                                                </li>
+                                                <li class="submenu-level">
+                                                   <ul class="submenu2">
+                                                        <li class="sub-title">
+                                                            <a href="#">CANADA</a>
+                                                            <span class="btn-mega"></span>
+                                                        </li>
+                                                        <li class="mega-menu-sub">
+                                                            <ul>
+                                                                <li><a href="#">New Zealand</a></li>
+                                                                <li><a href="#" title="">France</a></li>
+                                                                <li><a href="#" title="">Malaysia</a></li>
+                                                                <li><a href="#">Malta</a></li>
+                                                                
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                    </ul> 
+                                                </li>
+                                                <li class="submenu-level">
+                                                   <ul class="submenu2">
+                                                        <li class="sub-title">
+                                                            <a href="#">CODE</a>
+                                                            <span class="btn-mega"></span>
+                                                        </li>
+                                                        <li class="mega-menu-sub">
+                                                            <ul>
+                                                                <li><a href="#">UI/UX</a></li>
+                                                                <li><a href="" title="">Design Web</a></li>
+                                                                <li><a href="" title="">HTML5/CSS3</a></li>
+                                                                <li><a href="#">Development</a></li>
+                                                                <li><a href="" title="">Saler</a></li>
+                                                                <li><a href="" title="">Finace</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                    </ul> 
+                                                </li>
+                                                <li class="submenu-level">
+                                                   <ul class="submenu2">
+                                                        <li class="sub-title">
+                                                            <a href="#">GAME</a>
+                                                            <span class="btn-mega"></span>
+                                                        </li>
+                                                        <li class="mega-menu-sub">
+                                                            <ul>
+                                                                <li><a href="#">UI/UX</a></li>
+                                                                <li><a href="" title="">Design Web</a></li>
+                                                                <li><a href="" title="">HTML5/CSS3</a></li>
+                                                                <li><a href="#">Development</a></li>
+                                                                <li><a href="" title="">Saler</a></li>
+                                                                <li><a href="" title="">Finace</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul> 
+                                                </li>
+                                            </ul>
+                                        </li> -->
+                                        <li><a href="#" title="">COUNTRIES</a>
+                                            <ul class="submenu">
+                                                <li><a href="#">United Kindom</a></li>
+                                                <li><a href="#">New Zealand</a></li>
+                                                <li><a href="#">Australia</a></li>
+                                                <li><a href="#">Ireland</a></li>
+                                                <li><a href="#">Ireland</a></li>
+                                                <li><a href="#">Germany</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#" title="">COURSES</a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Business Management</a></li>
+                                                <li><a href="#">Engineering</a></li>
+                                                <li><a href="#">Hospitality-Tourism</a></li>
+                                                <li><a href="#">Accounting &amp; Finance</a></li>
+                                                <li><a href="#">Health-Medicine</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a href="#" title="">SERVICES</a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Career Counselling</a></li>
+                                                <li><a href="#">Selection Of Course Country &amp; University</a></li>
+                                                <li><a href="#">Visa Guidance</a></li>
+                                                <li><a href="#">Travel Assistance</a></li>
+                                                <li><a href="#">Post Arrival Assistance</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li class="home"><a href="#" title="">ABOUT</a></li>
+                                        <li><a href="#" title="">BRANCHES</a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Kerala</a></li>
+                                                <li><a href="#">Bangalore</a></li>
+                                                <li><a href="#">Hyderabad</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="home"><a href="#" title="">CONTACT</a></li>
+                                    </ul>
+                                </nav>
+                                
+                                <div class="top-search">                        
+                                    <form action="#" id="searchform-all" method="get">
+                                        <div>
+                                            <input type="text" id="s" class="sss" placeholder="Search...">
+                                            <input type="submit" value="" id="searchsubmit">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /top-search -->
+                            </div><!-- /wrap-nav -->
+                        </div><!-- /col-md-12 -->
+                    </div><!-- /row -->
+                </div><!-- /container -->
+            </header><!-- /header -->
+        </div><!-- /header3 -->
 
-            </ul>
-        </nav>
-    </header>
+        <div id="rev_slider_1078_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container slider_styles space-left space-top" data-alias="classic4export" data-source="gallery" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+                <!-- START REVOLUTION SLIDER 5.3.0.2 auto mode -->
+                <div id="rev_slider_1078_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.0.2">
+                    <div class="slotholder"></div>
+                    <ul><!-- SLIDE  -->
+                
+                        <!-- SLIDE 1 -->
+                        <li data-index="rs-3049" data-transition="slideremovedown" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"    data-rotate="0"  data-saveperformance="off"  data-title="Ken Burns" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">                        
+
+                            <!-- MAIN IMAGE -->
+                            <img src="images/slides/slides1.jpg"  alt=""  data-bgposition="center center" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 12 -->
+                            <div class="tp-caption title-slide" 
+                                id="slide-3049-layer-1" 
+                                data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                                data-y="['middle','middle','middle','middle']" data-voffset="['-77','-77','-77','-77']" 
+                                data-fontsize="['72','72','45','35']"
+                                data-lineheight="['60','60','45','35']"
+                                data-fontweight="['700','700','700','700']"
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"
+                     
+                                data-type="text" 
+                                data-responsive_offset="on"                             
+
+                                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[18,18,18,18]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 16; white-space: nowrap;text-transform:left;"><span>Explore Opportunities, Experience Cultures, </span><br>EXPAND YOUR HORIZONS
+                            </div>
+
+                            <!-- LAYER NR. 13 -->
+                            <div class="tp-caption sub-title" 
+                                id="slide-3049-layer-4" 
+                                data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                                data-y="['middle','middle','middle','middle']" data-voffset="['55','55','0','0']"
+                                data-fontsize="['16',16','14','14']" 
+                                data-fontweight="['300','300','300','300']"
+                                data-width="660"
+                                data-height="none"
+                                data-lineheight="['16','16','16','16']"
+                                data-whitespace="nowrap"
+                     
+                                data-type="text" 
+                                data-responsive_offset="on" 
+
+                                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 17; white-space: nowrap;text-transform:left;">Unlock Your Global Future
+                            </div>
+
+                            <a href="#" target="_self" class="tp-caption flat-button-slider bg-orange"         
+
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                         
+                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['188','188','188','50']" 
+                            data-width="['auto']"
+                            data-fontsize="['13',13','11','11']" 
+                            data-fontweight="['500','500','500','500']"
+                            data-lineheight="['46','46','38','38']"
+                            data-paddingright="['23','23','23','23']"
+                            data-paddingleft="['26','26','26','26']"
+                            data-height="['auto']">START A COURSE
+                            </a><!-- END LAYER LINK -->
+                        </li>
+
+                        <!-- SLIDE 2 -->
+                        <li data-index="rs-3050" data-transition="slideremovedown" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"    data-rotate="0"  data-saveperformance="off"  data-title="Ken Burns" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">                        
+
+                            <!-- MAIN IMAGE -->
+                            <img src="images/slides/slides2.jpg"  alt=""  data-bgposition="center center" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 12 -->
+                            <div class="tp-caption title-slide" 
+                                id="slide-3049-layer-2" 
+                                data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                                data-y="['middle','middle','middle','middle']" data-voffset="['-77','-77','-77','-77']" 
+                                data-fontsize="['72','72','45','35']"
+                                data-lineheight="['60','60','45','35']"
+                                data-fontweight="['700','700','700','700']"
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"
+                     
+                                data-type="text" 
+                                data-responsive_offset="on"                             
+
+                                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[18,18,18,18]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 16; white-space: nowrap;text-transform:left;"><span>Prepare for a Successful Global Career and </span><br>PERSONAL GROWTH
+                            </div>
+
+                            <!-- LAYER NR. 13 -->
+                            <div class="tp-caption sub-title" 
+                                id="slide-3049-layer-5" 
+                                data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                                data-y="['middle','middle','middle','middle']" data-voffset="['55','55','0','0']"
+                                data-fontsize="['16',16','14','14']" 
+                                data-fontweight="['300','300','300','300']"
+                                data-width="660"
+                                data-height="none"
+                                data-lineheight="['16','16','16','16']"
+                                data-whitespace="nowrap"
+                     
+                                data-type="text" 
+                                data-responsive_offset="on" 
+
+                                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 17; white-space: nowrap;text-transform:left;">The Gateway to International Education
+                            </div>
+
+                            <a href="#" target="_self" class="tp-caption flat-button-slider bg-orange"         
+
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                         
+                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['188','188','188','50']" 
+                            data-width="['auto']"
+                            data-fontsize="['13',13','11','11']" 
+                            data-fontweight="['500','500','500','500']"
+                            data-lineheight="['46','46','38','38']"
+                            data-paddingright="['23','23','23','23']"
+                            data-paddingleft="['26','26','26','26']"
+                            data-height="['auto']">START A COURSE
+                            </a><!-- END LAYER LINK -->
+                        </li>
+
+                        <!-- SLIDE 3 -->
+                        <li data-index="rs-3046" data-transition="slideremovedown" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"    data-rotate="0"  data-saveperformance="off"  data-title="Ken Burns" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">                        
+
+                            <!-- MAIN IMAGE -->
+                            <img src="images/slides/slides3.jpg"  alt=""  data-bgposition="center center" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 12 -->
+                            <div class="tp-caption title-slide" 
+                                id="slide-3047-layer-1" 
+                                data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                                data-y="['middle','middle','middle','middle']" data-voffset="['-77','-77','-77','-77']" 
+                                data-fontsize="['72','72','45','35']"
+                                data-lineheight="['60','60','45','35']"
+                                data-fontweight="['700','700','700','700']"
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"
+                     
+                                data-type="text" 
+                                data-responsive_offset="on"                             
+
+                                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[18,18,18,18]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 16; white-space: nowrap;text-transform:left;"><span>Gain Global Exposure and Enrich Your </span><br>LEARNING EXPERIENCE
+                            </div>
+
+                            <!-- LAYER NR. 13 -->
+                            <div class="tp-caption sub-title" 
+                                id="slide-3049-layer-6" 
+                                data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                                data-y="['middle','middle','middle','middle']" data-voffset="['55','55','0','0']"
+                                data-fontsize="['16',16','14','14']" 
+                                data-fontweight="['300','300','300','300']"
+                                data-width="660"
+                                data-height="none"
+                                data-lineheight="['16','16','16','16']"
+                                data-whitespace="nowrap"
+                     
+                                data-type="text" 
+                                data-responsive_offset="on" 
+
+                                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 17; white-space: nowrap;text-transform:left;">Education is the most powerful weapon which you can use to change the world.
+                            </div>
+
+                            <a href="#" target="_self" class="tp-caption flat-button-slider bg-orange"         
+
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                         
+                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['188','188','188','50']" 
+                            data-width="['auto']"
+                            data-fontsize="['13',13','11','11']" 
+                            data-fontweight="['500','500','500','500']"
+                            data-lineheight="['46','46','38','38']"
+                            data-paddingright="['23','23','23','23']"
+                            data-paddingleft="['26','26','26','26']"
+                            data-height="['auto']">START A COURSE
+                            </a><!-- END LAYER LINK -->
+                        </li>
+
+                        <!-- SLIDE 4 -->
+                        <!-- <li data-index="rs-3048" data-transition="slideremoveright" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"    data-rotate="0"  data-saveperformance="off"  data-title="HTML5 Video" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                           
+                            <img src="images/slides/slides4.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                            
+                            
+                            <div class="rs-background-video-layer" 
+                                data-forcerewind="on" 
+                                data-volume="mute" 
+                                data-vimeoid="202903642" 
+                                data-videoattributes="background=1&title=0&amp;byline=0&amp;portrait=0&amp;api=1" 
+                                data-videowidth="100%" 
+                                data-videoheight="100%" 
+                                data-videocontrols="none" 
+                                data-videostartat="00:00" 
+                                data-videoendat="00:48" 
+                                data-videoloop="loop" 
+                                data-forceCover="1" 
+                                data-aspectratio="4:3" 
+                                data-autoplay="true" 
+                                data-autoplayonlyfirsttime="false" ></div>
+
+
+                            
+                            <div class="tp-caption title-slide" 
+                                id="slide-3048-layer-1" 
+                                data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                                data-y="['middle','middle','middle','middle']" data-voffset="['-77','-77','-77','-77']" 
+                                data-fontsize="['72','72','45','35']"
+                                data-lineheight="['60','60','45','35']"
+                                data-fontweight="['700','700','700','700']"
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"
+                     
+                                data-type="text" 
+                                data-responsive_offset="on"                             
+
+                                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[18,18,18,18]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 16; white-space: nowrap;text-transform:left;"><span>FREE ONLINE COURSES FROM THE WORLD'S BEST</span><br>UNIVERSITIES
+                            </div>
+
+                           
+                            <div class="tp-caption sub-title style_subtitle" 
+                                id="slide-3049-layer-7" 
+                                data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                                data-y="['middle','middle','middle','middle']" data-voffset="['55','55','0','0']"
+                                data-fontsize="['16',16','14','14']" 
+                                data-fontweight="['300','300','300','300']"
+                                data-width="660"
+                                data-height="none"
+                                data-lineheight="['16','16','16','16']"
+                                data-whitespace="nowrap"
+                     
+                                data-type="text" 
+                                data-responsive_offset="on" 
+
+                                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]"
+                                data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+
+                                style="z-index: 17; white-space: nowrap;text-transform:left;">Education is the most powerful weapon which you can use to change the world.
+                            </div>
+
+                             <a href="#" target="_self" class="tp-caption flat-button-slider bg-orange"         
+
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                         
+                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['188','188','188','50']" 
+                            data-width="['auto']"
+                            data-fontsize="['13',13','11','11']" 
+                            data-fontweight="['500','500','500','500']"
+                            data-lineheight="['46','46','38','38']"
+                            data-paddingright="['23','23','23','23']"
+                            data-paddingleft="['26','26','26','26']"
+                            data-height="['auto']">START A COURSE
+                            </a>
+                        </li>                          -->
+                    </ul>
+                </div>
+        </div>
+        <!-- END REVOLUTION SLIDER -->
+
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+    <script type="text/javascript" src="javascript/countdown.js"></script>
+    <script type="text/javascript" src="javascript/imagesloaded.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="javascript/owl.carousel.js"></script>
+    <script type="text/javascript" src="javascript/jquery.easing.js"></script>
+    <script type="text/javascript" src="javascript/jquery.flexslider.js"></script>
+
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="revolution/js/slider.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->    
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+   
 </body>
 </html>
