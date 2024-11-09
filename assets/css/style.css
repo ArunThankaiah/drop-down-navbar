@@ -6489,7 +6489,7 @@ select:visited {
   float: left;
   font-size: 14px;
   margin-top: 5px;
-  color: #e3002a;
+  color: #fff;
   margin-right: 10px;
 }
 .yl-footer-widget .yl-footer-info-widget a {
@@ -7237,3 +7237,23 @@ select:visited {
 .footer-countries li a:hover{
   color: #fff;
 }
+.footer-social-media{
+  list-style: none;
+  display: flex;
+  
+}
+.footer-social-media li{
+  padding: 0 15px;
+  
+}
+.footer-social-media li a{
+ color: #fff;
+ text-decoration: none;
+ font-size: 18px;
+  
+}
+.footer-social-media li a i{
+  
+  font-size: 18px;
+   
+ }
