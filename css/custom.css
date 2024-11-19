@@ -93,3 +93,14 @@
         display: none;
     }
 }
+
+/* ----------------------------- */
+.section.cta .cta-info p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section.cta .cta-info p img{
+    display: block;
+    width: 15%;
+}

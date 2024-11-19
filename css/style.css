@@ -637,7 +637,7 @@ dfn {
 
 .section-heading,
 .section-heading-events {
-  font-size: 18px;
+  font-size: 25px;
   line-height: 1.2em;
   font-weight: 700;
   color: #2E8ECE;
@@ -1594,7 +1594,7 @@ Back To Top Section
 }
 
 .box-icon-2 .icon .fa {
-  font-size: 14px;
+  font-size: 25px;
 }
 
 .box-icon-2 .title {
@@ -2545,11 +2545,43 @@ Back To Top Section
 }
 
 /* TESTIMONIALS 3 */
+.testimony.bg-light{
+  position: relative;
+  padding: 100px 0 50px 0;
+  width: 100%;
+  height: 80vh;
+  background: url(../images/quote.png)  no-repeat;
+  background-position: center;
+  background-size: 150px;
+  backdrop-filter: blur(50px); 
+  z-index: -1;
+  
+  
+  
+}
+.testimony.bg-light::before {
+  content: ''; /* Necessary for a pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 242, 242, 0.15); 
+  opacity: 0; 
+  transition: opacity 1s ease; 
+}
+
+.testimony.bg-light:hover::before {
+  opacity: 1; 
+}
 .testimonial-3 .media {
   text-align: center;
   /*float: left;*/
 }
-
+.testimonial-3{
+  text-align: center;
+  margin-top: 25px;
+}
 .testimonial-3 .media img {
   width: 200px;
   margin: 0 auto;
@@ -2561,11 +2593,15 @@ Back To Top Section
 
 .testimonial-3 .body {
   /*padding-left: 200px;*/
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.6;
 }
+.testimonial-3 .body p{
+  width: 80%;
+  margin: 0 auto;
+}
 
-.testimonial-3 .title {
+.bodytitle {
   color: #222222;
   font-weight: 700;
   font-size: 24px;
@@ -2712,30 +2748,24 @@ Back To Top Section
   font-weight: 600;
   color: #46c2ca;
 }
-
-.counter-1 .counter-number {
-  display: block;
-  vertical-align: middle;
-  padding: 0;
-  width: 70px;
-  padding-right: 14px;
-  letter-spacing: -.5px;
-  font-weight: 700;
-  font-size: 48px;
+.counter-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.2rem;
+}
+.counter-1 h1{
   color: #2E8ECE;
-  font-family: "Quicksand", sans-serif;
+  font-size: 44px;
 }
-
-.counter-1 .counter-title {
-  display: table-cell;
-  vertical-align: middle;
-  padding: 0;
-  text-align: left;
-  line-height: 18px;
-  margin-bottom: 0;
-  color: #212635;
+.counter-1 .bx{
+  font-size: 45px;
+  color: #2e8ece;
 }
-
+.counter-1 .title{
+  font-size: 16px;
+  font-weight: 600;
+}
 /* 2.11. BOX HISTORY */
 .box-history .item {
   padding-bottom: 40px;
@@ -5253,7 +5283,7 @@ dl.hiw dd .team-2 .title,
 
 .footer .footer-item .recent-post li {
   list-style: none;
-  margin: 0 0 30px;
+  /* margin: 0 0 30px; */
 }
 
 .footer .footer-item .recent-post li a {
