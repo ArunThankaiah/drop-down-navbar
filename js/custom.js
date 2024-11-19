@@ -66,3 +66,6 @@ document.addEventListener('click', function(event) {
 menuList.addEventListener('click', function(event) {
     event.stopPropagation(); // Prevent the click from propagating to the document
 });
+
+// ---------------------------------------------------------------------
+

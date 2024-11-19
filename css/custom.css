@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -104,3 +105,131 @@
     display: block;
     width: 15%;
 }
+/* ------------------------------------------- */
+/* swiper js */
+/* ------------------------------------------- */
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+.photobanner {
+	position: relative;
+	height: 100px;
+	margin-bottom: 130px;
+	display: flex;
+	width: 100%;
+}
+
+.photobanner img {
+  margin: 0px 25px;
+  box-shadow: 2px 2px 8px #8a8a8a;
+}
+
+.photobanner {
+  animation: bannermove 50s linear infinite alternate-reverse;
+}
+
+@keyframes bannermove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -2700px;
+  }
+}
+/* ------------------------------------------- */
+/* End swiper js */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/* college slider heading */
+/* ------------------------------------------- */
+.college-slider{
+    text-align: center;
+    padding: 15px 0;
+}
+.college-slider h2{
+    font-size: 25x;
+    color: #2E8ECE;
+}
+.college-slider p{
+    font-size: 18px;
+    font-weight: 600;
+}
+/* ------------------------------------------- */
+/* End college slider heading */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/*  Map*/
+/* ------------------------------------------- */
+.map-contact iframe{
+    width: 100%;
+    height: 450px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+/* ------------------------------------------- */
+/*  End Map */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/*  Study Abroad */
+/* ------------------------------------------- */
+.countries{
+    margin-bottom: 100px;
+}
+.countries h2{
+    font-size: 35px;
+    color: #2E8ECE;
+    margin-bottom: 15px;
+}
+.stduy-abroad{
+    margin: 15px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.stduy-abroad img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+    box-shadow: 0 0 3px #000;
+}
+.stduy-abroad img:hover{
+    transform: scale(1.03);
+}
+.stduy-abroad h5{
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    z-index: 9;
+    padding-bottom: 10px;
+}
+
+/* ------------------------------------------- */
+/*  End Study Abroad */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/*  mission vision icon */
+/* ------------------------------------------- */
+
+.feature-box-8 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-box-8 a i{
+    padding-right: 5px;
+}
+/* ------------------------------------------- */
+/* End mission vision icon */
+/* ------------------------------------------- */
