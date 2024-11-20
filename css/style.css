@@ -4174,14 +4174,59 @@ Back To Top Section
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
-/* 6.1 - About */
-.banner-page.about {
-  background: url("../images/banner-page.jpg") bottom center no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+.banner-page .title-page{
+  color: #fff;
+}
+.banner-page  ul{
+  display: flex;
+  list-style: none;
+  align-items: start;
+  justify-content: start
+  
+}
+.banner-page  ul a{
+ text-decoration: none;
+ color: #fff;
+ font-size: 14px;
+ text-align: start;
 }
 
+/* 6.1 - About */
+.banner-page {
+ 
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.banner-page.about{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/about-banner.jpg") center no-repeat;
+}
+.banner-page.services{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/banner-services.jpg") center no-repeat;
+}
+.banner-page.contact-page{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/contact-banner.jpg") center no-repeat;
+}
+.banner-page.uk{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/uk-banner.jpg") center no-repeat;
+}
+.banner-page.ireland{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/ireland-banner.jpg") center no-repeat;
+}
+.banner-page.germany{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/germany-banner.jpg") center no-repeat;
+}
+.banner-page.newzealand{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/newzealand-banner.jpg") center no-repeat;
+}
+.banner-page.australia{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/australia-banner.jpg") center no-repeat;
+}
+.banner-page.canada{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/canada-banner.jpg") center no-repeat;
+}
 .director-image {
   position: relative;
   margin-bottom: 60px;
@@ -4418,7 +4463,7 @@ dl.hiw dd .team-2 .title,
   -ms-border-radius: 20px 0 0 20px;
   border-radius: 20px 0 0 20px;
   height: 100%;
-  background: url("../images/600x800.jpg") bottom center no-repeat;
+  background: url("../images/get-in-touch.jpg") bottom center no-repeat;
   background-size: cover;
 }
 
