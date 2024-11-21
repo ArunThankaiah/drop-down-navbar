@@ -64,7 +64,7 @@
         z-index: 99999;
     }
     .navbar-brand{
-        width: 100px;
+        width: 200px;
         height: 40px;
         display: flex;
         align-items: center;
@@ -73,6 +73,7 @@
     .navbar-brand img{
         display: block;
         width: 100%;
+        margin-right: 50px;
     }
 }
 
@@ -86,13 +87,15 @@
     }
 }
 @media (max-width: 1200px){
-    .navbar-main .nav>li>a{
-        font-size: 14px;
-        font-weight: 500;
-    }
     .navbar-main .nav>li:last-child a{
         display: none;
     }
+    .navbar-main.stiky .nav>li>a {
+        color: #212635;
+        font-size: 14px;
+        font-weight: 600;
+
+      }
 }
 
 /* ----------------------------- */
