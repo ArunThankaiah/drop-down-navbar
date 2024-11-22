@@ -4246,6 +4246,9 @@ Back To Top Section
 .banner-page.hyderabad{
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/hyderabad.jpg") center no-repeat;
 }
+.banner-page.courses{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/courses-banner.jpg") center no-repeat;
+}
 .director-image {
   position: relative;
   margin-bottom: 60px;
